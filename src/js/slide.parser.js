@@ -368,6 +368,14 @@ slide.parser.parse = function(text) {
 			$currentBlock = $("<h6>");
 			inlineText = matches[1];
 		}
+
+		matches = line.match(/^svg(.+)/);
+		if (matches !== null && matches.length === 2) {
+			console.debug(" -> svg");
+			// svg要素を追加
+			$currentBlock = $('<svg width="600" height="300">');
+			inlineText = '<line x1="10" y1="10" x2="100" y2="100" stroke="white"/></svg>';
+		}
 		
 		// ブロック要素解析 - end ----------------------------------------------
 		

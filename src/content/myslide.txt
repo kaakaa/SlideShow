@@ -11,6 +11,13 @@ META: color=#eef
 
 ## Created by Rezelk
 
+// svgテスト
+==========
+META: background=#113
+META: color=#eef
+# SVG
+svg hoge
+
 // スライド
 ==========
 META: background=#113
